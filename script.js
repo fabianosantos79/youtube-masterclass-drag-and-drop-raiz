@@ -1,5 +1,12 @@
 const cards = document.querySelectorAll('.card')
 const dropzones = document.querySelectorAll('.dropzone')
+const todo = document.querySelector('#todo')
+const progress = document.querySelector('#progress')
+const done = document.querySelector('#done')
+const statusTodo = document.querySelector('#statusTodo')
+const statusProgress = document.querySelector('#statusProgress')
+const statusDone = document.querySelector('#statusDone')
+const nivel = document.querySelectorAll('.nivel')
 
 cards.forEach(card => {
     card.addEventListener('dragstart', dragstart)
@@ -47,6 +54,7 @@ function dragover() {
     const cardDragged = document.querySelector('.is-dragging')
 
     this.appendChild(cardDragged)
+
 }
 
 function dragleave() {
